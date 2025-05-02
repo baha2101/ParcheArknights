@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Parche Arknights</string>
+    <string name="accessibility_name_input">Campo de texto para ingresar el nombre del usuario</string>
+    <string name="save_name_button">Guardar Nombre</string>
+    <string name="user_name_display">Nombre guardado: Doctor</string>
+    <string name="download_button">Descargar Traducciones</string>
+    <string name="start_service_button">Iniciar Traducción</string>
+    <string name="app_title">Parche Arknights Latino</string>
+    <string name="guardar_nombre">Guardar Nombre</string>
+    <string name="ingrese_su_nombre">Ingrese su nombre</string>
+    <string name="descargar_actualizaci_n">Descargar Actualización</string>
+    <string name="empezar_traducci_n">Empezar Traducción</string>
+    <string name="parche_arknights_latino">Parche Arknights Latino</string>
+</resources>

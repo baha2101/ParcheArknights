@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/your_image"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <!-- Contenedor para los elementos encima de la imagen -->
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="561dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+
+        <!-- Botón Iniciar Traducción -->
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:gravity="center"
+            android:text="@string/parche_arknights_latino"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startServiceButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/empezar_traducci_n"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón Descargar Traducción -->
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/descargar_actualizaci_n"
+            android:textColor="#FFFFFF" />
+
+        <!-- Campo para ingresar el nombre -->
+        <EditText
+            android:id="@+id/userNameInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/ingrese_su_nombre"
+            android:autofillHints="username"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+        <!-- Botón Guardar nombre -->
+        <Button
+            android:id="@+id/saveUserNameButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="@string/guardar_nombre"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
