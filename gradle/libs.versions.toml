@@ -1,26 +1,21 @@
 [versions]
-kotlin = "1.9.10" # Versión reciente y compatible con Gradle moderno
-androidGradlePlugin = "8.1.1" # Plugin de Gradle compatible con compileSdk 35
-material3 = "1.2.1" # Jetpack Compose Material3 más reciente
-okhttp = "4.11.0" # Versión confiable de OkHttp
-text-recognition = "16.0.0" # Última versión estable de ML Kit OCR
-poi = "5.2.3" # Apache POI para Excel
-poi-ooxml = "5.2.3"
-androidx-core-ktx = "1.12.0" # Jetpack Core KTX actualizado
-lifecycle = "2.6.2" # Jetpack Lifecycle Runtime
+kotlin = "1.9.22"
+android_gradle_plugin = "8.2.2"
+core_ktx = "1.15.0"
+material3 = "1.2.1"
+poi = "5.2.3"
+poi_ooxml = "5.2.3"
+mlkit_text_recognition = "16.0.0"
+okhttp = "4.12.0"
+
+[plugins]
+android.application = { id = "com.android.application", version.ref = "android_gradle_plugin" }
+kotlin.android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 [libraries]
-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-androidGradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "text-recognition" }
-poi = { group = "org.apache.poi", name = "poi", version.ref = "poi" }
-poi-ooxml = { group = "org.apache.poi", name = "poi-ooxml", version.ref = "poi-ooxml" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
-kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
-
-[bundles]
-androidx = ["androidx-core-ktx"]
-kotlin = ["kotlin-stdlib", "lifecycle-runtime-ktx"]
+androidx.core.ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+poi = { module = "org.apache.poi:poi", version.ref = "poi" }
+poi.ooxml = { module = "org.apache.poi:poi-ooxml", version.ref = "poi_ooxml" }
+text.recognition = { module = "com.google.mlkit:text-recognition", version.ref = "mlkit_text_recognition" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }

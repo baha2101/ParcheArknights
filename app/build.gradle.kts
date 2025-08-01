@@ -1,22 +1,24 @@
+//app
+
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
+    namespace = "com.example.parchearknights" // para AGP 8.x
     compileSdk = 35
 
     defaultConfig {
+        applicationId = "com.example.parchearknights"
         minSdk = 26
         targetSdk = 35
-        applicationId = "com.example.parchearknights"
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled = true
     }
-}
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
